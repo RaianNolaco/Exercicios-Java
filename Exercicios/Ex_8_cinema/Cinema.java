@@ -1,12 +1,18 @@
 import java.util.*;
 import java.lang.*;
 
-public class Cinema{
-	public static void main(String [] args){
-		
-				
+public class Cinema
+{
+  
+  public static void main(String [] args)
+	{
+	
 		Scanner sc = new Scanner(System.in);
 		
+		int fileira;
+		int especial;
+		int qntEspeciais;
+		int qntIngressos;	
 		
 		/*Variaveis dos assentos
 		F1Es = fileira A assento Especial
@@ -37,6 +43,7 @@ public class Cinema{
 		
 		//int calcBeta = a
 		
+		
       	System.out.println("\nOla seja bem vindo ao cinema Olympus");
  
 		System.out.println("\nQual e seu nome?");
@@ -50,24 +57,23 @@ public class Cinema{
 		"\n1 = As branquelas"+
 		"\n2 = A chegada");
 		int escolha = sc.nextInt();
-
-		
-							 
-		switch(escolha){
+				 
+		switch(escolha)
+		{	
 			
-			case 1:
+			 case 1:
 			
 				System.out.println("Boa escolha");
 				
 				System.out.println("Voce possue alguma nescessidade especial?(1 = Sim/2 = Nao)");
-				int especial = sc.nextInt(); 	
+				especial = sc.nextInt(); 	
 				
 				if(especial ==  1){
 					
 							
 							System.out.println("Possuimos apenas " + alphaF1Es + " assentos especiais na fileira A" +
 							"\n\nQuano ingressos especiais ira comprar?");
-							int qntEspeciais = sc.nextInt();					  
+							qntEspeciais = sc.nextInt();					  
 					     
 						    while(alphaF1Es < qntEspeciais ){
 								
@@ -86,7 +92,7 @@ public class Cinema{
 									
 				}else {
 						 System.out.println("\n\nQuano ingressos ira comprar?");
-						 int qntIgressos = sc.nextInt();
+						 qntIngressos = sc.nextInt();
 						
 				         System.out.println("\n\nEm qual fileira deseja?"+ 
 				         "\n\n1 = A"+
@@ -95,19 +101,19 @@ public class Cinema{
 				         "\n4 = D"+
 						 "\n5 = E"+
 						 "\n6 = F"); 
-						 int fileira = sc.nextInt();
+						  fileira = sc.nextInt();
 						 
 						 
 						 switch(fileira){
 							 
-							 case 1:
+							case 1:
 							        
 								if(alphaF1 >0){
 									
-									   alphaF1 -= qntIgressos;
+									   alphaF1 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+" ingressos na fileira F para o filme As branquelas");
+									   System.out.println("\nVoce comprou:" + qntIngressos+" ingressos na fileira F para o filme As branquelas");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima " + nome + ".");
 									
 								
@@ -123,10 +129,10 @@ public class Cinema{
 							      
 								if(alphaF2 >0){
 									   
-									   alphaF2 -= qntIgressos;
+									   alphaF2 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+ "ingressos na fileira B para o filme As branquelas");
+									   System.out.println("\nVoce comprou:" + qntIngressos+ "ingressos na fileira B para o filme As branquelas");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 									
 								}else{
@@ -141,10 +147,10 @@ public class Cinema{
 							        
 								if(alphaF3 >0){
 									
-									   alphaF3 -= qntIgressos;
+									   alphaF3 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+"ingressos na fileira C para o filme As branquelas");
+									   System.out.println("\nVoce comprou:" + qntIngressos+"ingressos na fileira C para o filme As branquelas");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 
 								}else{
@@ -159,10 +165,10 @@ public class Cinema{
 							        
 								if(alphaF4 >0){
 									
-									   alphaF4 -= qntIgressos;
+									   alphaF4 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+"ingressos na fileira D para o filme As branquelas");
+									   System.out.println("\nVoce comprou:" + qntIngressos+"ingressos na fileira D para o filme As branquelas");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 
 								}else{
@@ -177,10 +183,10 @@ public class Cinema{
 							        
 								if(alphaF5 >0){
 									
-									   alphaF5 -= qntIgressos;
+									   alphaF5 -= qntIngressos;
 									              
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+"ingressos na fileira E para o filme As branquelas");
+									   System.out.println("\nVoce comprou:" + qntIngressos+"ingressos na fileira E para o filme As branquelas");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 									
 								}else{
@@ -195,10 +201,10 @@ public class Cinema{
 							        
 							    if(alphaF6 >0){
 									
-								       alphaF6 -= qntIgressos;
+								       alphaF6 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos +"ingressos na fileira F para o filme As branquelas");
+									   System.out.println("\nVoce comprou:" + qntIngressos +"ingressos na fileira F para o filme As branquelas");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 
 									   
@@ -207,23 +213,25 @@ public class Cinema{
 									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
 									
 								}	
+							 break;
 							 
-							break;
+						 }
+					}	 
 							
-							//------------------------------------------------------------------//
-				case 2:
+//--------------------------------------------------------------------------------------------------------------------//
+		    case 2:
 			
 				      System.out.println("Boa escolha");
 				
 					  System.out.println("Voce possue alguma nescessidade especial?(1 = Sim/2 = Nao)");
-					  int especial = sc.nextInt(); 	
+					  especial = sc.nextInt(); 	
 				
 					  if(especial ==  1){
 					
 							
 					   System.out.println("Possuimos apenas " + betaF1Es + " assentos especiais na fileira A" +
 					   "\n\nQuano ingressos especiais ira comprar?");
-					    int qntEspeciais = sc.nextInt();					  
+					    qntEspeciais = sc.nextInt();					  
 					     
 						    while(betaF1Es < qntEspeciais ){
 								
@@ -242,7 +250,7 @@ public class Cinema{
 									
 				}else {
 						 System.out.println("\n\nQuano ingressos ira comprar?");
-						 int qntIgressos = sc.nextInt();
+						 qntIngressos = sc.nextInt();
 						
 				         System.out.println("\n\nEm qual fileira deseja?"+ 
 				         "\n\n1 = A"+
@@ -250,7 +258,7 @@ public class Cinema{
 				         "\n3 = C"+
 				         "\n4 = D"+
 						 "\n5 = E"); 
-						 int fileira = sc.nextInt();
+						 fileira = sc.nextInt();
 						 
 						 
 						 switch(fileira){
@@ -259,10 +267,10 @@ public class Cinema{
 							        
 								if(betaF1 >0){
 									
-									   betaF1 -= qntIgressos;
+									   betaF1 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+" ingressos na fileira F para o filme A Chegada");
+									   System.out.println("\nVoce comprou:" + qntIngressos+" ingressos na fileira F para o filme A Chegada");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima " + nome + ".");
 									
 								
@@ -278,10 +286,10 @@ public class Cinema{
 							      
 								if(alphaF2 >0){
 									   
-									   betaF2 -= qntIgressos;
+									   betaF2 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+ "ingressos na fileira B para o filme A Chegada");
+									   System.out.println("\nVoce comprou:" + qntIngressos+ "ingressos na fileira B para o filme A Chegada");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 									
 								}else{
@@ -296,10 +304,10 @@ public class Cinema{
 							        
 								if(betaF3 >0){
 									
-									   betaF3 -= qntIgressos;
+									   betaF3 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+"ingressos na fileira C para o filme A Chegada");
+									   System.out.println("\nVoce comprou:" + qntIngressos+"ingressos na fileira C para o filme A Chegada");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 
 								}else{
@@ -314,10 +322,10 @@ public class Cinema{
 							        
 								if(betaF4 >0){
 									
-									   betaF4 -= qntIgressos;
+									   betaF4 -= qntIngressos;
 									   
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+"ingressos na fileira D para o filme A Chegada");
+									   System.out.println("\nVoce comprou:" + qntIngressos+"ingressos na fileira D para o filme A Chegada");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 
 								}else{
@@ -332,10 +340,10 @@ public class Cinema{
 							        
 								if(betaF5 >0){
 									
-									   betaF5 -= qntIgressos;
+									   betaF5 -= qntIngressos;
 									              
 									   System.out.println("Compra realizada com sucesso!");
-									   System.out.println("\nVoce comprou:" + qntIgressos+"ingressos na fileira E para o filme A Chegada");
+									   System.out.println("\nVoce comprou:" + qntIngressos+"ingressos na fileira E para o filme A Chegada");
 									   System.out.println("\ntenha um bom filme :D, e até a proxima" + nome + ".");
 									
 								}else{
@@ -348,7 +356,8 @@ public class Cinema{
 						    
 					}
 			    }	
-			}		
-		}			
+									
 	}
+   
+  }	
 }
