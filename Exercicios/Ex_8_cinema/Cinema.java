@@ -12,7 +12,9 @@ public class Cinema
 		int fileira;
 		int especial;
 		int qntEspeciais;
-		int qntIngressos;	
+		int qntIngressos;
+		int continuar = 1;
+		
 		
 		/*Variaveis dos assentos
 		F1Es = fileira A assento Especial
@@ -40,26 +42,29 @@ public class Cinema
 		int	betaF3   = 25;
 		int	betaF4   = 25;
 		int	betaF5   = 25;
-		
 		//int calcBeta = a
 		
-		
-      	System.out.println("\nOla seja bem vindo ao cinema Olympus");
+		while(continuar == 1)
+		{
+		 
+		    System.out.println("---------------------------------------------------------------------");
+			System.out.println("\nOla seja bem vindo ao cinema Olympus");
  
-		System.out.println("\nQual e seu nome?");
-		String nome = sc.nextLine();	
+			System.out.println("\nQual e seu nome?");
+			String nome = sc.nextLine();	
 
-		System.out.println("\n\nEntao " + nome + " temos 2 filmes em exibicao no momento"+
-		"\n\nAs branquelas sendo exibido na sala Alpha"+
-        "\nA chegada sendo exibido na sala Beta"+
-		"\n\nQual filme voce ira querer assistir?"+
-		"\nDigite:"+
-		"\n1 = As branquelas"+
-		"\n2 = A chegada");
-		int escolha = sc.nextInt();
-				 
-		switch(escolha)
-		{	
+			System.out.println("\n\nEntao " + nome + " temos 2 filmes em exibicao no momento"+
+			"\n\nAs branquelas sendo exibido na sala Alpha"+
+			"\nA chegada sendo exibido na sala Beta"+
+			"\n\nQual filme voce ira querer assistir?"+
+			"\nDigite:"+
+			"\n1 = As branquelas"+
+			"\n2 = A chegada");
+			int escolha = sc.nextInt();
+				   			
+			  
+			switch(escolha)
+		    {	 
 			
 			 case 1:
 			
@@ -75,9 +80,9 @@ public class Cinema
 							"\n\nQuano ingressos especiais ira comprar?");
 							qntEspeciais = sc.nextInt();					  
 					     
-						    while(alphaF1Es < qntEspeciais ){
+						    while(alphaF1Es <= qntEspeciais ){
 								
-							     System.out.println("\n\nNão existem lugares disponives para quantidade de ingressos que voce deseja comprar");
+							     System.out.println("\n\nNao existem lugares disponives para quantidade de ingressos que voce deseja comprar");
 								 
 								 
 								 
@@ -119,7 +124,7 @@ public class Cinema
 								
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -137,7 +142,7 @@ public class Cinema
 									
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -155,7 +160,7 @@ public class Cinema
 
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -173,7 +178,7 @@ public class Cinema
 
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -191,7 +196,7 @@ public class Cinema
 									
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -210,13 +215,15 @@ public class Cinema
 									   
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 break;
 							 
 						 }
-					}	 
+					}
+
+	        break;
 							
 //--------------------------------------------------------------------------------------------------------------------//
 		    case 2:
@@ -235,7 +242,7 @@ public class Cinema
 					     
 						    while(betaF1Es < qntEspeciais ){
 								
-							     System.out.println("\n\nNão existem lugares disponives para quantidade de ingressos que voce deseja comprar");
+							     System.out.println("\n\nNao existem lugares disponives para quantidade de ingressos que voce deseja comprar");
 								 
 								 
 								 
@@ -276,7 +283,7 @@ public class Cinema
 								
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -294,7 +301,7 @@ public class Cinema
 									
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -312,7 +319,7 @@ public class Cinema
 
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -330,7 +337,7 @@ public class Cinema
 
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("	Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
@@ -348,16 +355,20 @@ public class Cinema
 									
 								}else{
 									
-									System.out.println("Não possuem lugares o suficiente na lideira escolhida");
+									System.out.println("Nao possuem lugares o suficiente na fileira escolhida");
 									
 								}	
 							 
 							break; 
-						    
+								    
 					}
-			    }	
-									
+			    }								
+	   }
+	
+	
+	  System.out.println("\n\nDeseja continuar executando o programa? (1 = sim / 2 = nao)");
+       continuar = sc.nextInt(); 
+			
 	}
-   
   }	
 }
