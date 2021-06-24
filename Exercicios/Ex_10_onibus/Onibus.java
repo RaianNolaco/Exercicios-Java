@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /*Crie uma classe para um ônibus turístico para levar pessoas de São Paulo até uma cidade turística.
 A classe deve armazenar o local atual, quantidade de paradas, capacidade do ônibus e quantas pessoas estão
 presentes nele.
@@ -11,10 +11,11 @@ Dentro do programa, deve ser possível modificar cada um dos atributos do ônibu
 
 class Onibus{
 
-	String local_atual;
-	int    qnt_paradas;
-	int    capacidade_pessoas;
-	int    pessoas_abordo;
+	String    local_atual;
+	int       qnt_paradas;
+	int       capacidade_pessoas;
+	int       pessoas_abordo;
+  
 
 	//Classe contrutora
 	public Onibus(String local_atual, int qnt_paradas,int capacidade_pessoas, int pessoas_abordo){
@@ -25,7 +26,11 @@ class Onibus{
 		this.pessoas_abordo     = pessoas_abordo;
 	
 	}
-	
+
+	public static String[] arr(String... paradas) {
+		return elements;
+	}
+
 	//Classes de alteração	
 
 	public void alterLocal_atual(String local_atual){
@@ -55,6 +60,7 @@ class Onibus{
 
 	// Classes de retorno 
 
+
 	public String returnLocal_atual(){
 		
 		return this.local_atual;
@@ -78,7 +84,6 @@ class Onibus{
 		return this.pessoas_abordo;
 
 	}
-
 
  	//funçoes
 
