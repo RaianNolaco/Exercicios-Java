@@ -1,4 +1,3 @@
-import jdk.tools.jlink.resources.plugins;
 
 public class Elevador {
  
@@ -58,30 +57,35 @@ public class Elevador {
 
     }
 
-    public void subir(){
+    public void Subir(int up){
 
-       if(this.andar_atual == this.total_andares){
+       if(this.andar_atual == this.total_andares || up > this.total_andares){
 
-        System.out.println("Nãoe existe andares superiores");        
+            System.out.println("Nãe existe andares superiores");        
 
        }else{
 
-        System.out.println("Subindo");
+            System.out.println("Subindo");
+            this.andar_atual += up;
+
+            System.out.println("Voce esta no "+this.andar_atual+"° andar.");
 
        }
 
     }
 
-    public void dacer(int up){
+    public void Descer(int domn){
 
-        if(this.andar_atual == this.total_andares || up >this.total_andares){
+        if(this.andar_atual == 0 || domn < 0){
  
-         System.out.println("Nãoe existe andares inferiores");        
+            System.out.println("Nãe existe andares inferiores");        
  
         }else{
  
-         System.out.println("Descendo");
+            System.out.println("Descendo");
+            this.andar_atual -= domn; 
  
+            System.out.println("Voce esta no "+this.andar_atual+"° andar.");
         }
  
      }

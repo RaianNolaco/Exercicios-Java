@@ -9,8 +9,6 @@ public class Onibus_teste {
 
         Onibus onibus1 = new Onibus("Grajau",5,32,13);
 
-        Onibus1(arr("Bom","Zaaz","Zooz"));
-
         System.out.println("Local atual: "+ onibus1.returnLocal_atual());
         System.out.println("Quanti dade maxima de passageiros suportados é de: "+ onibus1.returnCapacidade_pessoas());
         System.out.println("O onibus possui: "+ onibus1.returnPessoas_abordo() +" pessoas abordo");

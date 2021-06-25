@@ -27,10 +27,6 @@ class Onibus{
 	
 	}
 
-	public static String[] arr(String... paradas) {
-		return elements;
-	}
-
 	//Classes de alteração	
 
 	public void alterLocal_atual(String local_atual){
