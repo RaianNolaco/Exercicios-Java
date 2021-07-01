@@ -19,7 +19,7 @@ class Conta{
     }
 
     //CLASSES PADRÃO
-    public AlterarNome(){
+    public void AlterarNome(){
         this.nome = nome;
     } 
 
@@ -45,14 +45,14 @@ class Conta{
     }
 
 
-    //Saque
-    public void Sacar(double saque){
+    // //Saque
+    // public void Sacar(double saque){
 
-        this.saldo -=saque;
+    //     this.saldo -=saque;
         
-        System.out.println("Você sacou: "+ saque +"R$ \nSeu saldo atual é de: " + saldo +"R$");
+    //     System.out.println("Você sacou: "+ saque +"R$ \nSeu saldo atual é de: " + saldo +"R$");
 
-    }
+    // }
 
 
 }
