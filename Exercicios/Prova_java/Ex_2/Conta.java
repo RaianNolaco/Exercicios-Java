@@ -47,14 +47,21 @@ class Conta{
     }
 
 
-    // //Saque
-    // public void Sacar(double saque){
+    // Saque
+    public void Sacar(double saque){
 
-    //     this.saldo -=saque;
+        this.saldo -=saque;
         
-    //     System.out.println("Você sacou: "+ saque +"R$ \nSeu saldo atual é de: " + saldo +"R$");
+        System.out.println("Você sacou: R$"+ saque +"\nSeu saldo atual é de: R$" + saldo);
 
-    // }
+    }
 
+    public void Depositar(double deposito){
+
+        this.saldo +=deposito;
+        
+        System.out.println("Você depositou: R$"+ deposito +"\nSeu saldo atual é de: R$" + saldo);
+
+    }
 
 }
