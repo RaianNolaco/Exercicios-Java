@@ -3,6 +3,7 @@ import jdk.tools.jlink.internal.SymLinkResourcePoolEntry;
 class Conta{
 
     String nome;
+    String senha;
     int    numero;
     String agencia;
     double saldo;
@@ -72,7 +73,7 @@ class Conta{
 
         double rendimentoMes = mes * rendimentos;
 
-        System.out.println("Valor investindo R$" + deposito + "\n Você rendera: R$" + rendimentoMes + " em " + mes + "mêses");
+        System.out.println("Valor investindo R$" + deposito + "\n Você rendera: R$" + rendimentoMes + " em " + mes + " mêses");
 
     }    
 

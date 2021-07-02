@@ -131,7 +131,7 @@ class Onibus{
 
 		for(int i = 0; i < paradas.length; i++){
 
-			System.out.println("Digite o nome da "+ (i +1) +"° parada: ");
+			System.out.println("Digite o nome da "+ (i + 1) +"° parada: ");
 			this.paradas[i] = sc.nextLine();
 
 		}
