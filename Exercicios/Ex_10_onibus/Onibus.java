@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 /*Crie uma classe para um ônibus turístico para levar pessoas de São Paulo até uma cidade turística.
 A classe deve armazenar o local atual, quantidade de paradas, capacidade do ônibus e quantas pessoas estão
 presentes nele.
@@ -15,7 +15,10 @@ class Onibus{
 	int       qnt_paradas;
 	int       capacidade_pessoas;
 	int       pessoas_abordo;
+	String[]  paradas;
+	
   
+	Scanner sc =  new Scanner(System.in);
 
 	//Classe contrutora
 	public Onibus(String local_atual, int qnt_paradas,int capacidade_pessoas, int pessoas_abordo){
@@ -119,4 +122,28 @@ class Onibus{
 		System.out.println("O onibus está andando");
 
 	}
+
+
+    public  void parada(){
+
+		int qnt = this.qnt_paradas;
+
+		this.paradas  = new String[qnt]; 
+
+		for(int i = 0; i < paradas.length; i++){
+
+			System.out.println("Digite o nome da "+ (i +1) +"° parada: ");
+			this.paradas[i] = sc.nextLine();
+
+		}
+
+
+	}
+
+	public String retornarParadas(int x){
+
+		return this.paradas[x];
+	}
+
+
 }
