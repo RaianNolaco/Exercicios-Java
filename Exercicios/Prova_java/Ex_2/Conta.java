@@ -1,4 +1,4 @@
-
+import jdk.tools.jlink.internal.SymLinkResourcePoolEntry;
 
 class Conta{
 
@@ -7,17 +7,19 @@ class Conta{
     String agencia;
     double saldo;
     String criacao;
+    double porcentagemPorMes;
 
     
             
     //class construtora
-    public Conta(String nome, int numero, String agencia, double saldo, String criacao){
+    public Conta(String nome, int numero, String agencia, double saldo, String criacao,double porcentagemPorMes){
 
         this.nome     = nome;
         this.numero   = numero;
         this.agencia  = agencia;
         this.saldo    = saldo;
         this.criacao  = criacao;
+        this.porcentagemPorMes = porcentagemPorMes;
     }
 
     //CLASSES PADRÃO
@@ -63,5 +65,15 @@ class Conta{
         System.out.println("Você depositou: R$"+ deposito +"\nSeu saldo atual é de: R$" + saldo);
 
     }
+
+    public void caclularRendimento(double deposito, int mes){
+        
+        double rendimentos = ((this.porcentagemPorMes/100)*deposito);
+
+        double rendimentoMes = mes * rendimentos;
+
+        System.out.println("Valor investindo R$" + deposito + "\n Você rendera: R$" + rendimentoMes + " em " + mes + "mêses");
+
+    }    
 
 }

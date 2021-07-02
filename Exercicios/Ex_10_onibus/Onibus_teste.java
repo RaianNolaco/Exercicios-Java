@@ -7,7 +7,7 @@ public class Onibus_teste {
 
         Scanner sc =  new Scanner(System.in);
 
-        Onibus onibus1 = new Onibus("Grajau",5,32,13);
+        Onibus onibus1 = new Onibus("Grajau",10,32,13);
 
         System.out.println("Local atual: "+ onibus1.returnLocal_atual());
         System.out.println("Quanti dade maxima de passageiros suportados é de: "+ onibus1.returnCapacidade_pessoas());
