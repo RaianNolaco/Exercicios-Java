@@ -123,8 +123,7 @@ class Onibus{
 
 	}
 
-
-    public  void parada(){
+    public void parada(){
 
 		int qnt = this.qnt_paradas;
 
@@ -136,8 +135,6 @@ class Onibus{
 			this.paradas[i] = sc.nextLine();
 
 		}
-
-
 	}
 
 	public String retornarParadas(int x){
@@ -145,5 +142,12 @@ class Onibus{
 		return this.paradas[x - 1];
 	}
 
+	public void retornarTodasParadas(){
 
+		for(int i = 0; i < paradas.length; i++){
+
+			System.out.println(this.paradas[i]);
+
+		}
+	}
 }

@@ -20,7 +20,14 @@ public class Onibus_teste {
         int p = sc.nextInt();
 
         System.out.println(onibus1.retornarParadas(p));
-       
+        
+        System.out.println("Deseja saber todas as paradas?(1 = sim /2 = não)");
+        int n1 = sc.nextInt(); 
+
+        if(n1 == 1 || n1 == 1){
+            onibus1.retornarTodasParadas();
+        }
+
         // System.out.println("\nQuantas pesoas sairam?: ");
         // int pessoasSair = sc.nextInt();
 
