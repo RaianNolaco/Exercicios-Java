@@ -142,7 +142,7 @@ class Onibus{
 
 	public String retornarParadas(int x){
 
-		return this.paradas[x];
+		return this.paradas[x - 1];
 	}
 
 

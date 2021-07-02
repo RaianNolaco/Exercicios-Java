@@ -19,7 +19,7 @@ public class Onibus_teste {
         System.out.println("Qual parada quer saber?");
         int p = sc.nextInt();
 
-        System.out.println(onibus1.retornarParadas(p-1));
+        System.out.println(onibus1.retornarParadas(p));
        
         // System.out.println("\nQuantas pesoas sairam?: ");
         // int pessoasSair = sc.nextInt();
